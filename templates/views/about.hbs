@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>about</title>
         <link rel="icon" href="/css/images/weather.png">
         <link rel ="stylesheet" href="./css/styles.css">
         <script src="./js/file.js"></script>
+ 
+     
     </head>
 
     <body>
         <div class="main-content">
-        {{>header}}
-        <h1> {{title}}</h1>
-        <h1>{{name}}!!!!!</h1>
+        {{>header1}}
+        <h2 style="color:orange;font-family:comic sans ms;border-top:1px solid red;padding-top:10px;margin:15px;">FULL STACK WEB DEVELOPER</h2>
+            <img src ="/css/images/jithu.jpg" id ="aboutpic"></br>
+        <p style="margin-left:30%;color:blue;">Malkareddy Jithender</p></br>
+        <ul style="font-family:verdana">
+            <li style="color:black;">Loves coding</li></br>
+            <li style="color:teal">Computer Science & Engineering Student at Avanthi Institute of Engineering and Technology(AVIH) </li></br>
+            <li>Lives in Hyderabad</li></br>
+            <li style="color:midnightblue">Full Stack Web Developer</li></ul></br>
+        </ul>
+        
         </div>
 
         {{>footer}}
     </body>
-</html>
+
+     </html>

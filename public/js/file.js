@@ -47,7 +47,7 @@
                messageTwo.textContent = ''
                fetch('http://localhost:3000/weather?address='+location).then((response) => { 
                   response.json().then((data) => {
-                       if (error) {       
+                       if (data.error) {       
                     messageOne.textContent = data.error
                        } 
                        else

@@ -22,7 +22,7 @@ app.get('',(req,res)=>
 {
     res.render('index',{
         title:'Weather',
-        name:'Jithender Reddy'
+        name:'Jithender Malkareddy'
     })
 })
      
@@ -38,14 +38,14 @@ app.get('',(req,res)=>
     {
         res.render('about',{
             title:'About me',
-            name:'Jithender Reddy'
+            name:'Jithender Malkareddy'
         })
     })
     app.get('/help',(req,res)=>
     {
         res.render('help',{
             title:'Help',
-            name:'Jithender Reddy'
+            name:'Jithender Malkareddy'
         })
     })
 
@@ -59,22 +59,23 @@ app.get('',(req,res)=>
       })
     }
    
-    geocode(req.query.address,(error,{latitude,longitude,location})=>{
+    geocode(req.query.address,(error,data)=>{         //{latitude,longitude,location}
   if(error)
   {
-      return res.send({error})
+      return res.send({error})   
   }
 
-  forecast(latitude,longitude,(error,forecastdata)=>
+  forecast(data.latitude,data.longitude,(error,forecastdata)=>
   {
+      
       if(error)
       {
-          return res.send({error:error})
+          return res.send({error})
       }
 
       res.send({
           address:req.query.address,
-          location,
+          location:data.location,
           forecast:forecastdata
       })
   })
