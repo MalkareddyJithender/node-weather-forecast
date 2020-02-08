@@ -6,6 +6,9 @@ const forecast = require('./utils/forecast.js')
 
 //definig a path for express
  const app = express()
+ const port = process.env.PORT || 3000
+
+
  const staticpath = path.join(__dirname,'/public')
  const viewspath = path.join(__dirname,'/templates/views')
  const partialspath = path.join(__dirname,'/templates/partials')
@@ -99,13 +102,11 @@ app.get('',(req,res)=>
             errormessage:'Page Not found!!!!'
         })
     })
-// app.get('/g2',(req,res)=>
-// {
-//     res.send('Hi Mr.Jithender Reddy')
-// })
-app.listen(3000,()=>
+
+
+app.listen(port,()=>
 {
-    console.log('server is up on port 3000.')
+    console.log('server is up on port '+port)
 })
 
 
