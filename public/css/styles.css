@@ -4,7 +4,7 @@ color:red;
 width:700px;
 margin:0 auto;
 padding:50px;
-background-color:yellowgreen;
+background-color:skyblue;
 letter-spacing: 1px;
 
 display:flex;
@@ -83,4 +83,9 @@ margin-top:20px;
     border-radius:60%;
     margin-left:30%;
     margin-top:20px;
+}
+.message
+{
+    color:green;
+    
 }
