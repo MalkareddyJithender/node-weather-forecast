@@ -21,6 +21,8 @@ const forecast = require('./utils/forecast.js')
  //setup static directory
  app.use(express.static(staticpath))
 
+ app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
+
 app.get('',(req,res)=>
 {
     res.render('index',{

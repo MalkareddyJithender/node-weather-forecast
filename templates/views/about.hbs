@@ -1,31 +1,39 @@
 <!DOCTYPE html>
 <html>
-    <head>
+     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>about</title>
+        <title>weather</title>
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
         <link rel="icon" href="/css/images/weather.png">
-        <link rel ="stylesheet" href="./css/styles.css">
-        <script src="./js/file.js"></script>
- 
-     
+         <link rel="stylesheet" href="/css/bootstrap.min.css" />
+         <script src="https://kit.fontawesome.com/782454cdd4.js" crossorigin="anonymous"></script>
+         
     </head>
-
     <body>
-        <div class="main-content">
-        {{>header1}}
-        <h2 style="color:orange;font-family:comic sans ms;border-top:1px solid red;padding-top:10px;margin:15px;">FULL STACK WEB DEVELOPER</h2>
+        
+        {{>header2}}
+        <div id="about" class="row">                        
+                <h2 style="color:white;font-family:comic sans ms;padding-top:10px;margin:auto;display:block;">FULL STACK WEB DEVELOPER</h2></br></br>
+                  <div class="col-sm-12">
+                      <hr id="design">
             <img src ="/css/images/jithu.jpg" id ="aboutpic"></br>
-        <p style="margin-left:30%;color:blue;">Malkareddy Jithender</p></br>
+        <h4 style="margin-left:150px;font-family:sans-serif;color:teal">Malkareddy Jithender</h4></br>
         <ul style="font-family:verdana">
             <li style="color:black;">Loves coding</li></br>
             <li style="color:teal">Computer Science & Engineering Student at Avanthi Institute of Engineering and Technology(AVIH) </li></br>
             <li>Lives in Hyderabad</li></br>
             <li style="color:midnightblue">Full Stack Web Developer</li></ul></br>
         </ul>
-        
+            </div>
         </div>
-
         {{>footer}}
     </body>
-
+        <!-- bootstrap cdn and second one is jquery cdn --> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        
      </html>

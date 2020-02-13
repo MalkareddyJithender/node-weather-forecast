@@ -1,0 +1,99 @@
+#contact-header{
+    background-color:#007fff;
+    color:white;
+}
+ .navlinks:hover{
+  background-color:grey;
+  border-radius:8px;
+}
+.navlinks
+{
+font-size:22px;
+}
+.navlinks a{
+color:white!important;
+
+}
+#pic{
+     border-radius:50%;
+     display:block;
+     margin-left:10px;
+ }
+
+ #middlepart
+ {
+     height:650px;
+     background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+ }
+ .hrSection
+{
+    width:50px;
+    border:2px solid violet;
+    margin-left:22px;
+}
+ input
+{
+width:250px;
+height:40px;
+border:1px solid #eeeeee;
+border-radius:10px;
+}
+button
+{
+cursor:pointer;
+font-family:comic sans ms;
+height:45px;
+color:indigo;
+width:80px;
+border-radius:20px;
+}
+#place
+{
+    margin-top:55px;
+    margin-left:20px;
+}
+footer{
+background-color:rgb(43, 27, 27);
+color:white;
+width:1140px;
+height:40px;
+margin-left:-15px;
+}
+.linkact{ 
+background-color:indigo;
+border-radius:10px;
+
+}
+.dropstyle{
+background-color:rgba(0,0,0,0.5);
+color:white;
+}
+.dropdown:hover>.dropdown-menu{
+display:block;
+}
+#instructions
+{   height:650px;
+    background: linear-gradient(90deg, #f8ff00 0%, #3ad59f 100%);
+    font-family:cursive;
+    color:indigo;
+    font-size:25px;
+}
+#aboutpic
+{
+    border-radius:100%;
+    border-color:#000000;
+    height:300px;
+    width:300px;
+    margin-left:120px;
+    margin-top:40px;
+}
+#about
+{
+    background: -webkit-linear-gradient(#52ACFF,#FFE32C);
+  
+}
+#design
+{
+    width:150px;
+    border:1px solid orange;
+}
